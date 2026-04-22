@@ -1,8 +1,9 @@
-from tests import testing
+from tests import QuickSort_testing, complex_nums_testing
 from QuickSort import start
 
 #if __name__ == 'main':
-testing()
+complex_nums_testing()
+QuickSort_testing()
 print(start())
 
 
