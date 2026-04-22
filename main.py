@@ -4,6 +4,6 @@ from QuickSort import start
 #if __name__ == 'main':
 complex_nums_testing()
 QuickSort_testing()
-print(start())
+#print(start())
 
 

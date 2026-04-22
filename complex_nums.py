@@ -68,3 +68,23 @@ def mult(a:list):
     ans.i=func[1]
     ans.show = func[2]
     return ans
+
+def pow(a:complex_num, st:float):
+    ans = complex_num()
+    ans.r = a.r**st
+    ans.f = a.f * st
+    func = to_norm_show(ans.r, ans.f)
+    ans.c = func[0]
+    ans.i = func[1]
+    ans.show = func[2]
+    return ans
+
+def demult(a:complex_num, b:complex_num):
+    ans = complex_num()
+    ans.r = a.r / b.r
+    ans.f = a.f-b.f
+    func = to_norm_show(ans.r, ans.f)
+    ans.c = func[0]
+    ans.i = func[1]
+    ans.show = func[2]
+    return ans
