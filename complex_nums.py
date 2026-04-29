@@ -81,6 +81,8 @@ def pow(a:complex_num, st:float):
 
 def demult(a:complex_num, b:complex_num):
     ans = complex_num()
+    if b.r == 0:
+        return 'BAD INPUT'
     ans.r = a.r / b.r
     ans.f = a.f-b.f
     func = to_norm_show(ans.r, ans.f)

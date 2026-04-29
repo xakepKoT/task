@@ -5,11 +5,17 @@ def complex_nums_testing():
     t3 = summ([read(f'{str(j)}+{str(15-j)}i')] for j in range(12))
     t4 = mult([read(f'{str(j)}+{str(15-j)}i')] for j in range(1,12))
     t5 = mult([read('0')]+[read(f'{str(j)}+{str(16-j)}i')] for j in range(1,12))
+    t6 = pow(read('2-2i'),4)
+    t7 = pow(read('2-2i'), 3)
+    t8 = demult(read('2-2i'), read('151+94i'))
     assert all([t1.c == 1000, t1.i == 0])
     assert all([t2.i==0, t2.c==0])
     assert all([t3.c == 66, t3.i == 114])
     assert t4.show == '-233654733000.00067-461196406124.99994i  517007407370.45294*e^(i10.526638831256856i)'
     assert t5.show == '0.0+0.0i  0.0*e^(17.27875959474386i)'
+    assert t6.c == 64 and t6.i == 0
+    assert t7.c == -16 and t7.i == -16
+    assert t8.c == 0.0036033758 and t7.i == -0.0154881942
 
 
 
