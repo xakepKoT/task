@@ -18,6 +18,12 @@ def complex_nums_testing():
     assert t8.c == 0.0036033758 and t7.i == -0.0154881942
 
 
+from linked_list import *
+def slist_testing():
+    assert to_list(remove_first(from_list([1,2,3,4,5,6]),4)) == [1, 2, 3, 5, 6]
+    assert get_last(concat(from_list([1,2,3,4,5,6]), from_list([0,9]))) == 9
+    assert get(prepend(from_list([1,5,3,7]), 'x'), 0) == 'x'
+    assert to_list(remove_all(concat(from_list([None]), from_list([None])), None)) == []
 
 
 from QuickSort import do, ke
